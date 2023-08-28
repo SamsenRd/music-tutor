@@ -16,15 +16,80 @@
         <meta name="og:site_name" content="Music Tutoring Services">
 
         <link rel="stylesheet" href="styles.css">
+        
     </head>
     <body>
 
         <ul class="container-Navbar">
-            <li><a href="#">Music Intruments</a></li>
+            <li><a href="#">Music Instruments</a></li> 
             <li><a href="#">Rates</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
+            <li>
+                <div id="container-SearchBar">
+                <img class="icon" src="final-icon.png" alt="Sample image" style="width: 24px; height: 24px;">
+                <input class="searchBox" type="search" name="search" placeholder="Enter text here...">
+                <input type="submit" value="Search" class="searchButton">
+                </div>
+            </li>
         </ul>
+
+        <header>
+            <h1>Welcome to Sam's Music Tutoring School</h1>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                </svg> Learn to play like a pro <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/></svg>
+            </h3>
+        </header>
+
+        <div class="container-gallery">
+            <img class="item" src="photo1.jpeg" alt="photo1" style="width: 300px; height: 240px">
+            <img class="item" src="photo2.jpeg" alt="photo2" style="width: 300px; height: 240px">
+            <img class="item" src="photo3.jpeg" alt="photo3" style="width: 300px; height: 240px">
+            <img class="item" src="photo4.jpeg" alt="photo4" style="width: 300px; height: 240px">
+            <img class="item" src="photo5.jpeg" alt="photo5" style="width: 300px; height: 240px">
+            <img class="item" src="photo6.jpeg" alt="photo6" style="width: 300px; height: 240px">
+        </div>
+
+        <h3>Schedule a FREE Trial!</h3>
+
+        <div class="container-scheduling">
+            <form method="post">
+                <div class="calendar-date">
+                    <label for="date">Select a Date:</label>
+                    <input type="date" id="date" name="date">
+                    </label>
+
+                    <label for="people">Age:</label>
+                    <input type="range" id="people" name="people" min="3" max="18" value="8" oninput="this.nextElementSibling.value = this.value">
+                    <output>8</output>
+                    </label>
+                </div>
+
+                <div class="contact">
+                    <label for="first_name">Full Name:</label>
+                    <input type="text" id="first_name" name="first_name" minlength="3" maxlength="20" required>
+
+                    <label for="user_email">Email Address:</label>
+                    <input type="email" id="user_email" name="user_email" required>
+                </div>
+                </div>
+            </form>
+
+            <div class="label">
+                <label>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    I agree to the Terms and Conditions.
+                </label>
+                <br>
+                <button type="submit" class="submit">Submit Order!</button>
+            </div>
+        </div>
     </body>
 
 </html>
